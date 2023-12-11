@@ -23,7 +23,7 @@ public class Level3 {
         Set<Teacher> javaTeachers = teachers.stream()
                 .filter(t -> t.getSubject() == Subject.JAVA && t.getSalary() > 80000)
                 .collect(Collectors.toSet());
-        System.out.println("Profs java dont le salaire > 80k: " + javaTeachers);
+        System.out.println("Profs java dont le salaire > 80k:  " + javaTeachers);
 
         /* TO DO 3: Retourner un TreeSet d'enseignants (tri par nom et en cas d'égalité tri par salaire) */
         TreeSet<Teacher> sortedTeachers = teachers.stream()
